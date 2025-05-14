@@ -1,0 +1,13 @@
+{
+    "headers": [
+        {
+            "source": "/.well-known/(openid-credential-issuer|openid-configuration|did.json)",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                }
+            ]
+        }
+    ]
+}
