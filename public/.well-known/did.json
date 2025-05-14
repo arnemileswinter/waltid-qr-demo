@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:waltid-qr-demo.vercel.app",
+  "verificationMethod": [
+    {
+      "id": "did:web:waltid-qr-demo.vercel.app#key-1",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:waltid-qr-demo.vercel.app",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "x": "TiQMXo-heGi_ybIF2-Hxd9ZulsY0B5Yf6gFXtk7UeXs",
+        "y": "55lJjAQE8-c-Us8T4kNggiarGIFuOn-sexZb2-osdb0",
+        "crv": "P-256",
+        "alg": "ES256",
+        "use": "sig"
+      }
+    }
+  ],
+  "assertionMethod": [
+    "did:web:waltid-qr-demo.vercel.app#key-1"
+  ]
+}

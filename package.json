@@ -1,0 +1,36 @@
+{
+  "name": "vp-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/elliptic": "^6.4.18",
+    "@types/qrcode": "^1.5.5",
+    "did-jwt-vc": "^4.0.12",
+    "elliptic": "^6.6.1",
+    "jose": "^6.0.11",
+    "key-did-resolver": "^4.0.0",
+    "next": "15.3.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "redis": "^5.0.1",
+    "web-did-resolver": "^2.0.30"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
