@@ -7,6 +7,7 @@ export const dynamic = 'force-dynamic'
 
 export default async function Home() {
   const stateId = encodeURI(randomBytes(16).toString("base64"));
+  // sent by backend to waltid verifier. Result is a string that we generate into a qr code for the user to scan with their wallet.
   const presentation = await fetch(
     "https://verifier.demo.walt.id/openid4vc/verify",
     {
