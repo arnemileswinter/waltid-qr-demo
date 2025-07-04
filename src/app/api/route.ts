@@ -2,6 +2,7 @@
 import { redis } from '@/lib';
 import { NextRequest } from 'next/server';
 
+/** Long polling for verification result by user. */
 export async function GET(request: NextRequest) {
   const state = request.nextUrl.searchParams.get('state')
   if (state) {
@@ -14,6 +15,14 @@ export async function GET(request: NextRequest) {
 }
 
 
+/**
+ * Called by waltid verifier.
+ * Check if the request is authorized.
+ * If authorized, inspect verification result and store in redis.
+ * If not authorized, return 401.
+ * @param request 
+ * @returns 
+ */
 export async function POST(request: Request) {
   const authHeader = request.headers.get('Authorization');
   if (authHeader) {
